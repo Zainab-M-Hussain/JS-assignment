@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Pizza Alert</title>
+    <script>
+        // Define a variable containing the string "PIZZA"
+        var word = "PIZZA";
+
+        // Function to display the word in a single alert box with line breaks
+        function displayPizza() {
+            var message = "";
+            for (var i = word.length; i > 0; i--) {
+                message += word.slice(0, i) + "\n";
+            }
+            alert(message);
+        }
+    </script>
+</head>
+<body onload="displayPizza()">
+    <h1>Display Pizza Alert</h1>
+    <p>This page will display the word "PIZZA" in a single alert box with line breaks when it loads.</p>
+</body>
+</html>
+

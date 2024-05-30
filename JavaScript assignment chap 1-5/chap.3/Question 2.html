@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Counter</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+
+    <script>
+        // Check if the visit count is stored in local storage
+        if (localStorage.getItem("visitCount")) {
+            // If it exists, increment the visit count
+            var visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
+        } else {
+            // If it doesn't exist, set the visit count to 1
+            var visitCount = 1;
+        }
+
+        // Store the updated visit count in local storage
+        localStorage.setItem("visitCount", visitCount);
+
+        // Display the visit count in an alert box
+        alert("You have visited this site " + visitCount + " times.");
+    </script>
+</body>
+</html>
+
+
